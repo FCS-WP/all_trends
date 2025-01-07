@@ -1,0 +1,107 @@
+// Advanced AJAX Product Filters for WooCommerce by BeRocket.
+.elementor-widget-wp-widget-berocket_aapf_group {
+	// Base Theme Widget Styles.
+	&.vamtam-has-theme-widget-styles {
+		&.vamtam-products-filter {
+			.bapf_button.bapf_reset {
+				&:extend(.vamtam-font-primary-font);
+				font-size: 12px;
+				line-height: 16px;
+				padding: 0;
+				border: none;
+				background: transparent;
+				text-decoration: underline;
+				color: var(--vamtam-accent-color-6);
+			}
+			h3 {
+				&:extend(.vamtam-font-primary-font);
+				font-size: 14px;
+				font-weight: 500;
+				line-height: 15px;
+				text-transform: uppercase;
+				margin: 0;
+
+				i.bapf_colaps_smb {
+					&::before {
+						font-family: 'theme-icons';
+						font-weight: normal;
+						font-size: 14px;
+						color: var(--vamtam-accent-color-6);
+						content: var(--vamtam-icon-arrow-down);
+					}
+					&.fa-chevron-up {
+						rotate: 180deg;
+					}
+				}
+			}
+			.bapf_body {
+				ul > li {
+					padding: 4px 0 !important;
+				}
+				input[type="checkbox"] {
+					width: 10px;
+					height: 10px;
+					+ label {
+						&:extend(.vamtam-font-primary-font);
+						font-size: 14px;
+						line-height: 20px;
+					}
+				}
+				.bapf_slidr_all {
+					margin-top: 20px;
+					:is(
+						.bapf_slidr_main.ui-widget-content,
+						.berocket_filter_price_slider.ui-widget-content
+					 ) {
+						height: 2px;
+						margin: 0px 8px 10px 8px;
+						.ui-slider-handle {
+							font-size: 12px;
+							background-color: var(--vamtam-accent-color-6);
+						}
+					}
+
+					:is(.bapf_from, .bapf_to) {
+						&:extend(.vamtam-font-primary-font);
+						font-size: 12px;
+						line-height: 16px;
+					}
+					.bapf_from {
+						text-align: right;
+						&::after {
+							content: '-';
+							font-size: 12px;
+							margin: 0 3px;;
+						}
+					}
+					.bapf_to {
+						text-align: left;
+					}
+				}
+				ul li ul {
+					margin-top: 0;
+					margin-bottom: 0;
+				}
+			}
+			.bapf_sfilter {
+				padding-bottom: 20px;
+				border-bottom: 1px solid var(--vamtam-accent-color-7);
+			}
+			.berocket_single_filter_widget {
+				&:first-of-type {
+					.bapf_sfilter {
+						padding-top: 15px;
+						border-top: 1px solid var(--vamtam-accent-color-7);
+					}
+				}
+				&:last-child {
+					.bapf_sfilter {
+						padding-bottom: 0;
+						border-bottom: none;
+					}
+				}
+			}
+		}
+	}
+}
+

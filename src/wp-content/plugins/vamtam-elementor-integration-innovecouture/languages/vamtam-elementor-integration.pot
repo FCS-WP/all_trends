@@ -1,0 +1,847 @@
+# Copyright (C) 2024 VamTam
+# This file is distributed under the same license as the VamTam Elementor Integration (Innovecouture) package.
+msgid ""
+msgstr ""
+"Project-Id-Version: VamTam Elementor Integration (Innovecouture) 1.1.1\n"
+"Report-Msgid-Bugs-To: "
+"https://wordpress.org/support/plugin/vamtam-elementor-integration-"
+"innovecouture\n"
+"POT-Creation-Date: 2024-12-28 15:07:31+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2024-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"X-Generator: grunt-wp-i18n 1.0.3\n"
+
+#: includes/dynamic-tags/vamtam-author-profile-picture.php:29
+msgid "Author Profile Picture (Large)"
+msgstr ""
+
+#: includes/dynamic-tags/vamtam-popup.php:31
+#: includes/dynamic-tags/vamtam-popup.php:60
+msgid "Popup"
+msgstr ""
+
+#: includes/dynamic-tags/vamtam-popup.php:46
+msgid "Action"
+msgstr ""
+
+#: includes/dynamic-tags/vamtam-popup.php:50
+msgid "Open Popup"
+msgstr ""
+
+#: includes/dynamic-tags/vamtam-popup.php:51
+msgid "Close Popup"
+msgstr ""
+
+#: includes/dynamic-tags/vamtam-popup.php:52
+msgid "Toggle Popup"
+msgstr ""
+
+#: includes/dynamic-tags/vamtam-popup.php:85
+msgid "Don't Show Again"
+msgstr ""
+
+#: includes/dynamic-tags/vamtam-popup.php:96
+msgid "Align With Parent"
+msgstr ""
+
+#: includes/dynamic-tags/vamtam-popup.php:105
+msgid ""
+"<i style=\"font-size:11px;line-height:1.4;color:#a4afb7;\">On desktop, the "
+"popup will be positioned relative to it's parent.</i>"
+msgstr ""
+
+#: includes/site-settings/theme-site-settings.php:19
+msgid "Theme Settings"
+msgstr ""
+
+#: includes/site-settings/theme-site-settings.php:51
+#: includes/site-settings/theme-site-settings.php:79
+msgid ""
+"<h3><strong>After saving your changes, a page refresh will be needed for "
+"the changes to take effect.</strong/></h3>"
+msgstr ""
+
+#: includes/site-settings/theme-site-settings.php:69
+msgid "Global Widget Options"
+msgstr ""
+
+#: includes/site-settings/theme-site-settings.php:97
+msgid "Underline Animation"
+msgstr ""
+
+#: includes/site-settings/theme-site-settings.php:106
+msgid "<h3>Used in Button / Call To Action</h3>"
+msgstr ""
+
+#: includes/site-settings/theme-site-settings.php:115
+msgid "Underline Animation Default State"
+msgstr ""
+
+#: includes/site-settings/theme-site-settings.php:116
+msgid ""
+"Controls the <strong>default</strong> on/off state of the underline "
+"animation across widgets. Will be overridden by local widget options."
+msgstr ""
+
+#: includes/site-settings/theme-site-settings.php:118
+#: includes/site-settings/theme-site-settings.php:322
+msgid "On"
+msgstr ""
+
+#: includes/site-settings/theme-site-settings.php:119
+#: includes/site-settings/theme-site-settings.php:323
+msgid "Off"
+msgstr ""
+
+#: includes/site-settings/theme-site-settings.php:128
+msgid "Underline Width (px)"
+msgstr ""
+
+#: includes/site-settings/theme-site-settings.php:146
+msgid "Underline Spacing (px)"
+msgstr ""
+
+#: includes/site-settings/theme-site-settings.php:164
+#: includes/widgets/button.php:72 includes/widgets/call-to-action.php:79
+msgid "Underline Color"
+msgstr ""
+
+#: includes/site-settings/theme-site-settings.php:182
+msgid "Widgets"
+msgstr ""
+
+#: includes/site-settings/theme-site-settings.php:191
+msgid ""
+"<h3>Using the switches below, you can easily toggle the theme's custom "
+"implementation for a particular widget type on and off.</h3>"
+msgstr ""
+
+#: includes/site-settings/theme-site-settings.php:199
+msgid "Enable All Widget Modifications"
+msgstr ""
+
+#: includes/site-settings/theme-site-settings.php:212
+msgid "Disable All Widget Modifications"
+msgstr ""
+
+#: includes/site-settings/theme-site-settings.php:265
+msgid "WooCommerce"
+msgstr ""
+
+#: includes/site-settings/theme-site-settings.php:299
+msgid "General"
+msgstr ""
+
+#: includes/site-settings/theme-site-settings.php:307
+msgid "Search Form Popups Get Focus"
+msgstr ""
+
+#: includes/site-settings/theme-site-settings.php:308
+msgid ""
+"If enabled, all popups containing a search-form will receive focus "
+"everytime the popup is opened."
+msgstr ""
+
+#: includes/site-settings/theme-site-settings.php:319
+msgid "Font Smoothing"
+msgstr ""
+
+#: includes/site-settings/theme-site-settings.php:320
+msgid "Toggles font-smoothing (added by the theme) for the whole site."
+msgstr ""
+
+#: includes/site-settings/theme-site-settings.php:360
+msgid "Show on Mini Cart"
+msgstr ""
+
+#: includes/site-settings/theme-site-settings.php:372
+msgid "Show on Cart Page"
+msgstr ""
+
+#: includes/site-settings/theme-site-settings.php:384
+msgid "Goal Amount"
+msgstr ""
+
+#: includes/site-settings/theme-site-settings.php:396
+msgid "Include Taxes"
+msgstr ""
+
+#: includes/site-settings/theme-site-settings.php:397
+msgid "Calculate subtotal with taxes."
+msgstr ""
+
+#: includes/site-settings/theme-site-settings.php:409
+msgid "Initial Message"
+msgstr ""
+
+#: includes/site-settings/theme-site-settings.php:411
+msgid ""
+"Message to show before reaching the goal. Use shortcode [missing_amount] to "
+"display the amount left to reach the set goal."
+msgstr ""
+
+#: includes/site-settings/theme-site-settings.php:412
+msgid "Add [missing_amount] more to get Free Shipping!"
+msgstr ""
+
+#: includes/site-settings/theme-site-settings.php:422
+msgid "Success Message"
+msgstr ""
+
+#: includes/site-settings/theme-site-settings.php:424
+msgid "Message to show when the goal is reached."
+msgstr ""
+
+#: includes/site-settings/theme-site-settings.php:425
+msgid "You have free shipping!"
+msgstr ""
+
+#: includes/site-settings/theme-site-settings.php:435
+msgid "Primary Bar Color"
+msgstr ""
+
+#: includes/site-settings/theme-site-settings.php:450
+msgid "Remaining Bar Color"
+msgstr ""
+
+#: includes/site-settings/theme-site-settings.php:465
+msgid "Bar Success Color"
+msgstr ""
+
+#: includes/vamtam-elementor-hooks.php:69
+msgid "Image - Grow With Scale (Left)"
+msgstr ""
+
+#: includes/vamtam-elementor-hooks.php:70
+msgid "Image - Grow With Scale (Right)"
+msgstr ""
+
+#: includes/vamtam-elementor-hooks.php:71
+msgid "Image - Grow With Scale (Top)"
+msgstr ""
+
+#: includes/vamtam-elementor-hooks.php:72
+msgid "Image - Grow With Scale (Bottom)"
+msgstr ""
+
+#: includes/vamtam-elementor-hooks.php:101
+msgid "Custom Theme Colors can't be deleted"
+msgstr ""
+
+#: includes/vamtam-elementor-hooks.php:102
+msgid "Custom Theme Fonts can't be deleted"
+msgstr ""
+
+#: includes/widgets/button.php:20 includes/widgets/call-to-action.php:27
+msgid "Use Underline Animation"
+msgstr ""
+
+#: includes/widgets/button.php:32 includes/widgets/call-to-action.php:39
+#: includes/widgets/woocommerce-product-images.php:105
+#: includes/widgets/woocommerce-product-images.php:278
+msgid "Width"
+msgstr ""
+
+#: includes/widgets/button.php:52 includes/widgets/call-to-action.php:59
+#: includes/widgets/login.php:112 includes/widgets/login.php:177
+#: includes/widgets/login.php:288 includes/widgets/login.php:353
+#: includes/widgets/login.php:415 includes/widgets/woocommerce-menu-cart.php:73
+msgid "Spacing"
+msgstr ""
+
+#: includes/widgets/column.php:15
+msgid "Overflow"
+msgstr ""
+
+#: includes/widgets/column.php:19
+msgid "Default"
+msgstr ""
+
+#: includes/widgets/column.php:20
+msgid "Hidden"
+msgstr ""
+
+#: includes/widgets/container.php:79
+msgid "Theme Sticky Header (Desktop)"
+msgstr ""
+
+#: includes/widgets/container.php:91
+msgid "Header Is Transparent"
+msgstr ""
+
+#: includes/widgets/container.php:104
+msgid "Offset (px)"
+msgstr ""
+
+#: includes/widgets/container.php:121
+msgid "Offset on Sticky"
+msgstr ""
+
+#: includes/widgets/container.php:122
+msgid ""
+"Offset will be applied to the sticky state of the header as well. When "
+"disabled, offset is only applied on the initial position of the sticky "
+"header."
+msgstr ""
+
+#: includes/widgets/form.php:46
+msgid "Field"
+msgstr ""
+
+#: includes/widgets/form.php:66 includes/widgets/product-add-to-cart.php:73
+#: includes/widgets/woocommerce-menu-cart.php:396
+#: includes/widgets/woocommerce-menu-cart.php:571
+msgid "Padding"
+msgstr ""
+
+#: includes/widgets/form.php:67
+msgid "Applies to fields & labels."
+msgstr ""
+
+#: includes/widgets/form.php:82 includes/widgets/product-add-to-cart.php:86
+#: includes/widgets/woocommerce-menu-cart.php:98
+#: includes/widgets/woocommerce-menu-cart.php:445
+#: includes/widgets/woocommerce-product-images.php:521
+msgid "Normal"
+msgstr ""
+
+#: includes/widgets/form.php:89 includes/widgets/form.php:170
+#: includes/widgets/form.php:266 includes/widgets/login.php:524
+#: includes/widgets/login.php:579 includes/widgets/product-add-to-cart.php:93
+#: includes/widgets/product-add-to-cart.php:134
+#: includes/widgets/woocommerce-menu-cart.php:452
+#: includes/widgets/woocommerce-menu-cart.php:488
+#: includes/widgets/woocommerce-product-images.php:51
+#: includes/widgets/woocommerce-product-images.php:224
+msgid "Text Color"
+msgstr ""
+
+#: includes/widgets/form.php:104 includes/widgets/form.php:182
+#: includes/widgets/form.php:278 includes/widgets/product-add-to-cart.php:104
+#: includes/widgets/product-add-to-cart.php:145
+#: includes/widgets/woocommerce-product-images.php:65
+#: includes/widgets/woocommerce-product-images.php:238
+msgid "Background Color"
+msgstr ""
+
+#: includes/widgets/form.php:149 includes/widgets/form.php:226
+#: includes/widgets/form.php:322 includes/widgets/product-add-to-cart.php:62
+#: includes/widgets/woocommerce-menu-cart.php:551
+#: includes/widgets/woocommerce-product-images.php:90
+#: includes/widgets/woocommerce-product-images.php:263
+msgid "Border Radius"
+msgstr ""
+
+#: includes/widgets/form.php:163 includes/widgets/product-add-to-cart.php:127
+#: includes/widgets/woocommerce-menu-cart.php:120
+#: includes/widgets/woocommerce-menu-cart.php:481
+msgid "Hover"
+msgstr ""
+
+#: includes/widgets/form.php:239 includes/widgets/product-add-to-cart.php:167
+msgid "Transition Duration"
+msgstr ""
+
+#: includes/widgets/form.php:259
+msgid "Focus"
+msgstr ""
+
+#: includes/widgets/login.php:27 includes/widgets/login.php:494
+msgid "Login Content"
+msgstr ""
+
+#: includes/widgets/login.php:35
+msgid "Show Logged Out status in Editor"
+msgstr ""
+
+#: includes/widgets/login.php:46 includes/widgets/login.php:219
+msgid "Title"
+msgstr ""
+
+#: includes/widgets/login.php:51 includes/widgets/login.php:224
+msgid "Enter your title"
+msgstr ""
+
+#: includes/widgets/login.php:52
+msgid "Login"
+msgstr ""
+
+#: includes/widgets/login.php:60 includes/widgets/login.php:236
+msgid "HTML Tag"
+msgstr ""
+
+#: includes/widgets/login.php:81 includes/widgets/login.php:146
+#: includes/widgets/login.php:257 includes/widgets/login.php:322
+msgid "Alignment"
+msgstr ""
+
+#: includes/widgets/login.php:85 includes/widgets/login.php:150
+#: includes/widgets/login.php:261 includes/widgets/login.php:326
+#: includes/widgets/woocommerce-product-images.php:139
+#: includes/widgets/woocommerce-product-images.php:312
+msgid "Left"
+msgstr ""
+
+#: includes/widgets/login.php:89 includes/widgets/login.php:154
+#: includes/widgets/login.php:265 includes/widgets/login.php:330
+msgid "Center"
+msgstr ""
+
+#: includes/widgets/login.php:93 includes/widgets/login.php:158
+#: includes/widgets/login.php:269 includes/widgets/login.php:334
+#: includes/widgets/woocommerce-product-images.php:143
+#: includes/widgets/woocommerce-product-images.php:316
+msgid "Right"
+msgstr ""
+
+#: includes/widgets/login.php:97 includes/widgets/login.php:162
+#: includes/widgets/login.php:273 includes/widgets/login.php:338
+msgid "Justified"
+msgstr ""
+
+#: includes/widgets/login.php:135 includes/widgets/login.php:311
+#: includes/widgets/login.php:386
+msgid "Text"
+msgstr ""
+
+#: includes/widgets/login.php:137 includes/widgets/login.php:313
+#: includes/widgets/login.php:388
+msgid "Enter your text"
+msgstr ""
+
+#: includes/widgets/login.php:138 includes/widgets/login.php:314
+#: includes/widgets/login.php:389
+msgid "Add Your Text Here"
+msgstr ""
+
+#: includes/widgets/login.php:200 includes/widgets/login.php:548
+msgid "Logged In Content"
+msgstr ""
+
+#: includes/widgets/login.php:208
+msgid "Use Default Title"
+msgstr ""
+
+#: includes/widgets/login.php:225
+msgid "Add Your Heading Text Here"
+msgstr ""
+
+#: includes/widgets/login.php:376
+msgid "Show Button"
+msgstr ""
+
+#: includes/widgets/login.php:404 includes/widgets/login.php:466
+msgid "https://your-link.com"
+msgstr ""
+
+#: includes/widgets/login.php:450
+msgid "Custom Register URL"
+msgstr ""
+
+#: includes/widgets/login.php:503 includes/widgets/login.php:557
+msgid "Title Color"
+msgstr ""
+
+#: includes/widgets/login.php:677
+msgid "Don't have an account?"
+msgstr ""
+
+#: includes/widgets/login.php:678
+msgid "Create account"
+msgstr ""
+
+#: includes/widgets/login.php:825 includes/widgets/login.php:1045
+msgid "Welcome"
+msgstr ""
+
+#: includes/widgets/login.php:907
+msgid "You are Logged in as %1$s (<a href=\"%2$s\">Logout</a>)"
+msgstr ""
+
+#: includes/widgets/login.php:946 includes/widgets/login.php:1139
+msgid "Remember Me"
+msgstr ""
+
+#: includes/widgets/login.php:968 includes/widgets/login.php:1156
+msgid "Lost your password?"
+msgstr ""
+
+#: includes/widgets/login.php:977 includes/widgets/login.php:1167
+#: includes/widgets/login.php:1171
+msgid "Register"
+msgstr ""
+
+#: includes/widgets/login.php:1092
+msgid "You are Logged in as %1$s (<a href=\"#\">Logout</a>)"
+msgstr ""
+
+#: includes/widgets/nav-menu.php:24
+msgid "Theme"
+msgstr ""
+
+#: includes/widgets/nav-menu.php:59
+msgid "Disable Page Scroll"
+msgstr ""
+
+#: includes/widgets/nav-menu.php:60
+msgid "Disables the page scroll when the mobile dropdown menu is toggled."
+msgstr ""
+
+#: includes/widgets/nav-menu.php:70
+msgid "Enforce Max Height"
+msgstr ""
+
+#: includes/widgets/nav-menu.php:71
+msgid ""
+"Use this option if the mobile dropdown menu is getting cut and items become "
+"unreachable."
+msgstr ""
+
+#: includes/widgets/nav-menu.php:83
+msgid "Max Height (vh)"
+msgstr ""
+
+#: includes/widgets/nav-menu.php:84
+msgid ""
+"Adjust this value until all items are scroll-reachable. Test this on the "
+"frontend as on the editor there can be elements that take up space which "
+"are hidden on the frontend.<i>Please ignore the desktop variant of this "
+"option as its value is not used.</i>"
+msgstr ""
+
+#: includes/widgets/popup.php:22
+msgid "Retain Position"
+msgstr ""
+
+#: includes/widgets/popup.php:23
+msgid "The popup will retain it's initial position regardless of page scroll."
+msgstr ""
+
+#: includes/widgets/popup.php:40
+msgid "Open By Selector on Hover"
+msgstr ""
+
+#: includes/widgets/popup.php:41
+msgid ""
+"The popup will be triggered when the selector is hovered. When using this "
+"feature make sure the <strong>selector</strong> used in the \"Open By "
+"Selector\" field is <strong>unique</strong> (use ID when possible) and "
+"<strong>not</strong> used to open other Popups. <em>*Does "
+"<strong>not</strong> support multiple selectors.</em>"
+msgstr ""
+
+#: includes/widgets/popup.php:54
+msgid "Close on Hover Away"
+msgstr ""
+
+#: includes/widgets/popup.php:55
+msgid ""
+"The popup will be closed automatically when it loses hover.<br/>If you "
+"experience issues with popup flickering when using this option, it's "
+"probably related to the \"Overlay\" option. If disabling the \"Overlay\" "
+"option is not possible, make sure the overlay doesn't overlap the popup's "
+"\"Open Selector\" element."
+msgstr ""
+
+#: includes/widgets/popup.php:71
+msgid "Align with Selector"
+msgstr ""
+
+#: includes/widgets/popup.php:72
+msgid ""
+"The popup will be positioned relative to the selector (trigger) element. "
+"When using this feature make sure the <strong>selector</strong> used in the "
+"\"Open By Selector\" field is <strong>unique</strong> (use ID when "
+"possible). <em>*Does <strong>not</strong> support multiple selectors.</em>"
+msgstr ""
+
+#: includes/widgets/product-add-to-cart.php:28
+#: includes/widgets/woocommerce-menu-cart.php:420
+msgid "View Cart"
+msgstr ""
+
+#: includes/widgets/product-add-to-cart.php:37
+msgid ""
+"The style of this widget is often affected by your theme and plugins. If "
+"you experience any such issue, try to switch to a basic theme and "
+"deactivate related plugins."
+msgstr ""
+
+#: includes/widgets/product-add-to-cart.php:115
+#: includes/widgets/product-add-to-cart.php:156
+#: includes/widgets/woocommerce-menu-cart.php:516
+#: includes/widgets/woocommerce-product-images.php:529
+#: includes/widgets/woocommerce-product-images.php:563
+msgid "Border Color"
+msgstr ""
+
+#: includes/widgets/product-add-to-cart.php:212
+msgid "Disable Theme's Ajax Handler"
+msgstr ""
+
+#: includes/widgets/product-add-to-cart.php:213
+msgid ""
+"Disables theme's Ajax add-to-cart handler implementation for single "
+"products."
+msgstr ""
+
+#: includes/widgets/product-add-to-cart.php:258
+msgid "Price"
+msgstr ""
+
+#: includes/widgets/product-add-to-cart.php:268
+#: includes/widgets/woocommerce-menu-cart.php:107
+#: includes/widgets/woocommerce-menu-cart.php:127
+msgid "Color"
+msgstr ""
+
+#: includes/widgets/tabs.php:17
+msgid "Disable Default Tab Animation"
+msgstr ""
+
+#: includes/widgets/tabs.php:18
+msgid "Disables the default tab switching animation."
+msgstr ""
+
+#: includes/widgets/theme-post-featured-image.php:23
+msgid "Display Gallery on Hover (Products only)"
+msgstr ""
+
+#: includes/widgets/theme-post-featured-image.php:24
+msgid ""
+"Display the product's gallery when hovering over the featured image. Works "
+"only for products."
+msgstr ""
+
+#: includes/widgets/woocommerce-menu-cart.php:51
+msgid "Cart"
+msgstr ""
+
+#: includes/widgets/woocommerce-menu-cart.php:278
+msgid "Theme Default"
+msgstr ""
+
+#: includes/widgets/woocommerce-menu-cart.php:296
+msgid "Hide on Cart/Checkout"
+msgstr ""
+
+#: includes/widgets/woocommerce-menu-cart.php:297
+msgid "Hides the menu-card widget on WC's Cart & Checkout pages."
+msgstr ""
+
+#: includes/widgets/woocommerce-menu-cart.php:351
+msgid "Layout"
+msgstr ""
+
+#: includes/widgets/woocommerce-menu-cart.php:354
+msgid "Inline"
+msgstr ""
+
+#: includes/widgets/woocommerce-menu-cart.php:355
+msgid "Stacked"
+msgstr ""
+
+#: includes/widgets/woocommerce-menu-cart.php:378
+msgid "Space Between"
+msgstr ""
+
+#: includes/widgets/woocommerce-menu-cart.php:420
+msgid "Checkout"
+msgstr ""
+
+#: includes/widgets/woocommerce-menu-cart.php:465
+#: includes/widgets/woocommerce-menu-cart.php:501
+msgid "Background"
+msgstr ""
+
+#: includes/widgets/woocommerce-menu-cart.php:653
+msgid "Qty"
+msgstr ""
+
+#: includes/widgets/woocommerce-product-data-tabs.php:27
+msgid "Hide Description"
+msgstr ""
+
+#: includes/widgets/woocommerce-product-data-tabs.php:37
+msgid "Hide Additional Information"
+msgstr ""
+
+#: includes/widgets/woocommerce-product-data-tabs.php:46
+msgid "Hide Reviews"
+msgstr ""
+
+#: includes/widgets/woocommerce-product-data-tabs.php:56
+msgid "Hide Q&A"
+msgstr ""
+
+#: includes/widgets/woocommerce-product-data-tabs.php:69
+msgid "Use Mobile Horizontal Layout"
+msgstr ""
+
+#: includes/widgets/woocommerce-product-images.php:29
+#: includes/widgets/woocommerce-product-images.php:37
+msgid "Sale Flash"
+msgstr ""
+
+#: includes/widgets/woocommerce-product-images.php:39
+#: includes/widgets/woocommerce-product-images.php:210
+msgid "Show"
+msgstr ""
+
+#: includes/widgets/woocommerce-product-images.php:40
+#: includes/widgets/woocommerce-product-images.php:209
+msgid "Hide"
+msgstr ""
+
+#: includes/widgets/woocommerce-product-images.php:120
+#: includes/widgets/woocommerce-product-images.php:293
+msgid "Height"
+msgstr ""
+
+#: includes/widgets/woocommerce-product-images.php:135
+#: includes/widgets/woocommerce-product-images.php:308
+msgid "Position"
+msgstr ""
+
+#: includes/widgets/woocommerce-product-images.php:163
+#: includes/widgets/woocommerce-product-images.php:336
+msgid "Distance"
+msgstr ""
+
+#: includes/widgets/woocommerce-product-images.php:199
+#: includes/widgets/woocommerce-product-images.php:207
+msgid "New Badge"
+msgstr ""
+
+#: includes/widgets/woocommerce-product-images.php:361
+msgid "Top Offset"
+msgstr ""
+
+#: includes/widgets/woocommerce-product-images.php:362
+msgid "Applied only when the \"Sale\" badge is present."
+msgstr ""
+
+#: includes/widgets/woocommerce-product-images.php:404
+msgid "Disable Image Link"
+msgstr ""
+
+#: includes/widgets/woocommerce-product-images.php:408
+msgid ""
+"Disables opening the image on a new tab or Elementor lightbox. Doesn't "
+"disable WC's lightbox (if enabled)."
+msgstr ""
+
+#: includes/widgets/woocommerce-product-images.php:507
+msgid "Use Dot Navigation On Mobile"
+msgstr ""
+
+#: includes/widgets/woocommerce-product-images.php:541
+#: includes/widgets/woocommerce-product-images.php:575
+msgid "Bg Color"
+msgstr ""
+
+#: includes/widgets/woocommerce-product-images.php:555
+msgid "Active"
+msgstr ""
+
+#: includes/widgets/woocommerce-product-images.php:639
+msgid "Display as Full Size Gallery"
+msgstr ""
+
+#: includes/widgets/woocommerce-product-images.php:650
+msgid "Disable On Mobile"
+msgstr ""
+
+#: includes/widgets/woocommerce-product-images.php:664
+msgid "Image Spacing"
+msgstr ""
+
+#: vamtam-elementor-integration.php:78
+#. translators: 1: Plugin name 2: Elementor
+msgid ""
+"\"%1$s\" requires an Elementor-based VamTam theme to be activated in order "
+"to work."
+msgstr ""
+
+#: vamtam-elementor-integration.php:79 vamtam-elementor-integration.php:91
+#: vamtam-elementor-integration.php:104
+msgid "Vamtam Elementor Integration"
+msgstr ""
+
+#: vamtam-elementor-integration.php:90
+#. translators: 1: Plugin name 2: Elementor
+msgid "\"%1$s\" requires \"%2$s\" to be installed and activated."
+msgstr ""
+
+#: vamtam-elementor-integration.php:92 vamtam-elementor-integration.php:105
+msgid "Elementor"
+msgstr ""
+
+#: vamtam-elementor-integration.php:103
+#. translators: 1: Plugin name 2: Elementor 3: Required Elementor version
+msgid "\"%1$s\" requires \"%2$s\" version %3$s or greater."
+msgstr ""
+
+#: vamtam-elementor-integration.php:274
+msgid "Additional JS"
+msgstr ""
+
+#: vamtam-elementor-integration.php:307
+msgid "Before </head>"
+msgstr ""
+
+#: vamtam-elementor-integration.php:320
+msgid "After <body>"
+msgstr ""
+
+#: vamtam-elementor-integration.php:333
+msgid "Before </body>"
+msgstr ""
+
+#: vamtam-updates/class-vamtam-updates.php:61
+msgid " View changelog"
+msgstr ""
+
+#: vamtam-updates/class-vamtam-updates.php:76
+msgid "Heads up, no valid license found!"
+msgstr ""
+
+#: vamtam-updates/class-vamtam-updates.php:78
+msgid "Heads up, you're missing out on automatic updates!"
+msgstr ""
+
+#: vamtam-updates/class-vamtam-updates.php:86
+msgid "Please activate your license to get automatic plugin updates!"
+msgstr ""
+
+#: vamtam-updates/class-vamtam-updates.php:90
+msgid "Register Now"
+msgstr ""
+
+#: vamtam-updates/class-vamtam-updates.php:94
+msgid "Cosnider getting a theme license for a seamless updating experience."
+msgstr ""
+
+#: vamtam-updates/class-vamtam-updates.php:104
+msgid "Update Now"
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+msgid "VamTam Elementor Integration (Innovecouture)"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "http://vamtam.com"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "Extend the Elementor plugin with widgets and template builder."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "VamTam"
+msgstr ""

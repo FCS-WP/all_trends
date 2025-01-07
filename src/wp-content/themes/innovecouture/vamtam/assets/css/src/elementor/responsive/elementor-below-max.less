@@ -1,0 +1,46 @@
+body.responsive-layout {
+
+    #scroll-to-top {
+        bottom: 20px;
+    }
+
+    .page-wrapper {
+        flex-direction: column;
+    }
+}
+
+// WC Store Notice.
+.woocommerce-demo-store {
+	.demo_store {
+		.woocommerce-store-notice__dismiss-link {
+			&::before {
+				position: absolute;
+				right: 20px;
+			}
+		}
+	}
+}
+
+/* thumb nav - mobile styles */
+.vamtam-thumb-wrapper {
+	.swiper-button-prev,
+	.swiper-button-next {
+		background: transparent;
+		&::after {
+			font-size: 10px;
+		}
+	}
+	.swiper-button-next {
+		right: 0;
+		padding-right: 15px;
+	}
+	.swiper-button-prev {
+		left: 0;
+		padding-left: 15px;
+	}
+}
+
+
+/* --- Widgets --- */
+// Glob import all below-max widget styles.
+@import '../../elementor/widgets/**/*.tablet.less';

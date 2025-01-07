@@ -1,0 +1,478 @@
+// Menu cart.
+
+// @import (reference) "../../../mixins.less";
+// @import (reference) "../../../../buttons.less";
+.elementor-widget-woocommerce-menu-cart {
+	// Base Theme Widget Styles.
+	&.vamtam-has-theme-widget-styles {
+		.elementor-menu-cart__container.elementor-menu-cart--shown {
+			background-color: rgba(0,0,0,.80);
+		}
+
+		.elementor-menu-cart__container:not(.elementor-menu-cart--shown) .elementor-menu-cart__main {
+			opacity: 1;
+		}
+
+		.elementor-menu-cart__container .elementor-menu-cart__main {
+			width: 30%;
+			// Bijoux-after.
+			min-width: 500px;
+			display: grid;
+			grid-template-columns: 1fr;
+			grid-template-rows: min-content auto;
+			overflow-y: auto;
+			@top-padding: 2%;
+			padding: 20px 0 0 0; // put bottom padding in .widget_shopping_cart_content to negate how overflow: scroll works.
+			font-size: 100%;
+
+			// Ipad safari fix.
+			body[data-elementor-device-mode="tablet"].e--ua-safari & {
+				// On safari (Ipad) there seems to be an issue with applying the proper
+				// intrinsic (1fr) parent height value.
+				height: calc(100% - @top-padding);
+			}
+
+			.woocommerce-cart-form__contents {
+				height: auto;
+				max-height: unset;
+				overflow: visible;
+				overflow-x: hidden;
+				grid-row: 1;
+			}
+
+			.product-thumbnail {
+				max-width: 70px;
+				max-height: fit-content;
+				grid-row: 1/2;
+
+				img {
+					display: block;
+				}
+			}
+
+			.product-remove {
+				grid-column: 4;
+				justify-self: flex-end;
+				border: 0;
+				width: auto;
+				height: auto;
+				position: relative;
+
+				// Override some def Elementor styles.
+				> a:not(.elementor_remove_from_cart_button) {
+					display: inline;
+					z-index: initial;
+					overflow: hidden;
+					opacity: 1;
+					position: relative;
+				}
+
+				&::before,
+				&::after {
+					display: none;
+				}
+			}
+
+			.product-price {
+				grid-column: 3;
+				align-self: flex-start;
+				padding-left: 0;
+
+				.quantity {
+					display: flex;
+					min-height: 30px;
+					align-items: center;
+
+					.vamtam-quantity {
+						position: relative;
+						margin-right: 15px;
+
+						svg {
+							fill: currentColor;
+							stroke: currentColor;
+							stroke-width: 0;
+							width: 1em;
+							height: 1em;
+							position: absolute;
+							top: calc(50% - .5em);
+							left: 55%;
+							right: 0;
+							bottom: 0;
+							font-weight: 500;
+							font-size: 16px;
+							pointer-events: none;
+						}
+
+						select {
+							&:focus {
+								outline: 0;
+								box-shadow: none;
+							}
+
+							appearance: none;
+							padding: 0 1rem 0 1.5rem !important;
+							min-height: 45px;
+							height: 2rem;
+							min-width: 4.5rem;
+							max-width: 100%;
+							transition: border .3s cubic-bezier(0.39,0.575,0.565,1);
+							text-overflow: ellipsis;
+							color: inherit;
+							line-height: inherit;
+							font-family: inherit;
+							option {
+								background-color: var(--cart-background-color);
+							}
+							// Overrides
+							background: none !important;
+							margin: 0 !important;
+							padding-bottom: 0 !important;
+						}
+					}
+
+					.woocommerce-Price-amount {
+						margin-left: auto;
+					}
+
+					.subscription-details::before {
+						content: "\00a0";
+						font-size: 0;
+						vertical-align: bottom;
+					}
+				}
+			}
+
+			.product-name {
+				grid-column: 2 / 3;
+				padding: .6em 25px 0 25px;
+
+				> a {
+					.vamtam-line-clamp-2();
+				}
+			}
+
+			.cart_item {
+				display: grid;
+				grid-template-rows: auto auto;
+				grid-template-columns: max-content 50% minmax(20%, auto) 40px;
+				grid-row-gap: 10px;
+				padding: 15px 0;
+
+				&:not(:last-of-type),
+				&:not(:first-of-type) {
+					margin: 0;
+				}
+				&:last-of-type {
+					border: none;
+				}
+			}
+
+			.vamtam-close {
+				display: inline-block;
+				width: 1em;
+				height: 1em;
+				transition: none;
+				stroke-width: 0;
+				stroke: currentColor;
+				fill: currentColor;
+				vertical-align: middle;
+
+				* {
+					pointer-events: none;
+				}
+			}
+
+			> .vamtam-elementor-menu-cart__header,
+			> .widget_shopping_cart_content .cart_item,
+			> .widget_shopping_cart_content > :not(.woocommerce-cart-form__contents):not(.elementor-menu-cart__footer-buttons) {
+				padding-left: 7%; // Should also be replicated in Elementor selector (woocommerce-menu-cart.php->padding for footer btns).
+				padding-right: 7%; // Should also be replicated in Elementor selector (woocommerce-menu-cart.php->padding for footer btns).
+			}
+
+			.widget_shopping_cart_content {
+				display: grid;
+				grid-template-columns: 1fr;
+				grid-template-rows: 1fr min-content min-content;
+
+				// Empty side cart
+				.woocommerce-mini-cart__empty-message {
+					text-align: var( --empty-message-alignment, center );
+					position: absolute;
+					top: 50%;
+					left: 50%;
+					transform: translate(-50%,-50%);
+					padding-left: 0;
+					padding-right: 0;
+
+					&::before {
+						font-family: 'theme-icons';
+						content: var(--vamtam-icon-bag);
+						display: block;
+						font-size: 2.5em;
+						font-weight: 400;
+						font-style: normal;
+						font-variant: normal;
+						line-height: 1;
+						text-rendering: auto;
+						-webkit-font-smoothing: antialiased;
+						color: var(--vamtam-accent-color-6);
+						margin-bottom: 12px;
+					}
+				}
+			}
+
+			.vamtam-elementor-menu-cart__header {
+				display: flex;
+				align-items: center;
+				font-size: 16px;
+				font-weight: bold;
+				padding-bottom: 20px;
+
+				.font-h4 {
+					color: var(--vamtam-accent-color-6);
+					&:extend(.vamtam-font-h5);
+				}
+
+				.elementor-menu-cart__close-button {
+					margin: 0;
+					margin-inline-start: auto;
+					align-self: center;
+					width: auto;
+					height: auto;
+					display: flex;
+					flex-direction: column;
+					justify-items: center;
+
+					&::before,
+					&::after {
+						display: none;
+					}
+				}
+
+				.elementor-menu-cart__close-button-custom {
+					margin-bottom: 0;
+					margin-top: 0;
+					align-self: center;
+				}
+
+				span.label {
+					margin-inline-end: 15px;
+				}
+			}
+
+			.elementor-menu-cart__footer-buttons {
+				padding-top: 20px;
+				padding-bottom: 20px;
+				grid-row: 3;
+
+				.elementor-button--checkout {
+					order: 1;
+				}
+
+				.elementor-button--view-cart {
+					order: 2;
+				}
+
+				.elementor-button--checkout,
+				.elementor-button--view-cart {
+					display: flex;
+					justify-content: center;
+					align-items: center;
+				}
+
+				> a {
+					line-height: 30px;
+					height: 100%;
+				}
+			}
+
+			//base style overrides so mobile styles are always used for menu cart.
+			.product-name,
+			.product-remove {
+				display: flex;
+				align-items: stretch;
+				border: none;
+				border-radius: 0;
+			}
+
+			.product-remove {
+				grid-row: 1;
+				grid-column: 3;
+				bottom: 0;
+
+				.vamtam-close.vamtam-trash {
+					font-size: var(--remove-item-button-size, inherit);
+				}
+
+				a.remove_from_cart_button {
+					display: flex;
+					flex-wrap: nowrap;
+				}
+			}
+			.product-price {
+				grid-column: 1/4;
+				color: inherit;
+
+				&, .amount {
+					font-weight: inherit;
+				}
+			}
+			.product-name {
+				flex-direction: column;
+				padding-top: 0;
+				padding-left: 20px;
+				padding-right: 25px;
+			}
+			.product-name,
+			.product-price {
+				font-size: 100%;
+			}
+			.product-thumbnail {
+				grid-row: 1/3;
+				> a, > a > img {
+					display: block;
+				}
+			}
+			.cart_item {
+				grid-template-rows: auto;
+				grid-template-columns: ~"min(25%, 70px)" auto auto;
+				padding-top: 40px;
+				padding-bottom: 40px;
+			}
+		}
+
+		.elementor-menu-cart__container {
+			height: 100vh;
+			width: calc(100vw - var(--vamtam-scrollbar-width, 0) );
+
+			.elementor-menu-cart__subtotal {
+				grid-row: 2;
+				display: flex;
+				padding:  30px 0;
+				font-size: 16px;
+
+				.woocommerce-Price-amount {
+					margin-left: auto;
+				}
+			}
+			.elementor-menu-cart__main {
+				.product-remove a {
+					font-size: var(--remove-item-button-size, 22px);
+					color: var(--remove-item-button-color);
+					&:hover {
+						color: var(--remove-item-button-hover-color);
+					}
+
+					svg {
+						width: 1em;
+						height: 1em;
+					}
+
+					:is(svg, svg g) {
+						color: currentColor;
+						fill: currentColor;
+					}
+				}
+			}
+		}
+
+		&.toggle-icon--vamtam-theme {
+			.elementor-menu-cart__toggle .elementor-button-icon {
+				i::before {
+					font-family: 'theme-icons';
+					content: var(--vamtam-icon-bag);
+				}
+			}
+		}
+
+		.elementor-menu-cart__toggle .elementor-button-icon-qty[data-counter] {
+			font-size: 10px;
+			min-width: 2em;
+			height: 2em;
+			line-height: 1.75em;
+			letter-spacing: normal;
+			border: 0;
+		}
+
+		.elementor-menu-cart__toggle_wrapper .elementor-menu-cart__container .elementor-menu-cart__main .widget_shopping_cart_content .elementor-menu-cart__footer-buttons {
+			padding-left: 7%;
+			padding-right: 7%;
+		}
+
+		// This fixes an issue where the card icon flickers on page-load when the "Show Empty" option is used.
+		&.elementor-menu-cart--empty-indicator-hide .elementor-menu-cart__toggle .elementor-button-icon-qty[data-counter="0"] {
+			&, :before {
+				display: none !important;
+			}
+		}
+
+		// This fixes a bug where the "Show Empty" option is set to true but the empty cart is still getting hidden from js.
+		&.hidden:not(.elementor-menu-cart--empty-indicator-hide) {
+			display: block;
+			visibility: visible;
+		}
+		// Above rule should not apply to sticky-header spacer el.
+		.elementor-sticky__spacer &.hidden:not(.elementor-menu-cart--empty-indicator-hide) {
+			display: none;
+			visibility: hidden;
+		}
+
+		// Remove btn - Increased specificity.
+		&:not(.elementor-menu-cart--show-remove-button-yes) .elementor-menu-cart__product-remove {
+			display: none;
+		}
+
+		// Divider - Increased specificity.
+		&.elementor-menu-cart--show-divider-yes .elementor-menu-cart__product:not(:last-of-type),
+		&.elementor-menu-cart--show-divider-yes .elementor-menu-cart__products,
+		&.elementor-menu-cart--show-divider-yes .elementor-menu-cart__subtotal {
+			border-bottom-width: 1px;
+			border-bottom-style: solid;
+		}
+
+		.elementor-menu-cart__container {
+			.elementor-menu-cart__main {
+				.vamtam-close-cart {
+					font-size: var(--cart-close-icon-size, 40px);
+					color: var(--cart-close-button-color);
+					&:hover {
+						color: var(--cart-close-button-hover-color);
+					}
+				}
+
+				.elementor-menu-cart__footer-buttons>a {
+					line-height: initial;
+				}
+			}
+		}
+
+		// This is so the global button hover styles are not overriding the local cart toggle styles (cart toggle does not have hover styles atm).
+		.elementor-menu-cart__toggle .elementor-button:is(:hover, :focus) {
+			border: var(--toggle-button-border-width,1px) var(--toggle-button-border-type,solid) var(--toggle-button-border-color,#818a91)
+		}
+
+		// This is to keep the items number vertically centered on the cart toggle (bubble).
+		&.elementor-menu-cart--items-indicator-bubble .elementor-menu-cart__toggle .elementor-button-icon-qty[data-counter] {
+			line-height: 1;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+		}
+
+		// This is to override the global button options (if set).
+		.elementor-menu-cart__toggle .elementor-button:focus {
+			background-color: var( --toggle-button-hover-background-color, transparent);
+		}
+	}
+}
+.woocommerce {
+	&.woocommerce-cart,
+	&.woocommerce-checkout {
+		.elementor-widget-woocommerce-menu-cart {
+			&.vamtam-has-hide-cart-checkout {
+				display: none;
+			}
+		}
+	}
+}

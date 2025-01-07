@@ -1,0 +1,57 @@
+// Fibosearch.
+.elementor-widget-fibosearch {
+	// Base Theme Widget Styles.
+	&.vamtam-has-theme-widget-styles {
+		:is(.dgwt-wcas-search-form .dgwt-wcas-search-submit, .dgwt-wcas-search-icon) {
+			i.vamtamtheme-.vamtam-theme-search {
+				font-size: 16px;
+				color: var(--vamtam-accent-color-6);
+			}
+		}
+
+		.js-dgwt-wcas-layout-classic {
+			input[type=search].dgwt-wcas-search-input {
+				border-radius: 0;
+				border-width: 0px;
+				border-bottom-width: 1px;
+				padding: 13px 24px 13px 34px;
+			}
+		}
+		.dgwt-wcas-style-pirx.dgwt-wcas-search-filled {
+			.dgwt-wcas-sf-wrapp {
+				input[type=search].dgwt-wcas-search-input {
+					border-radius: 0;
+					padding-left: 0;
+				}
+			}
+		}
+		.dgwt-wcas-sf-wrapp {
+			border-radius: 0;
+		}
+		.dgwt-wcas-style-pirx.js-dgwt-wcas-layout-classic {
+			.dgwt-wcas-sf-wrapp {
+				button.dgwt-wcas-search-submit {
+					left: 4px;
+				}
+			}
+			.dgwt-wcas-close {
+				&:not(.dgwt-wcas-inner-preloader) {
+					margin-right: 20px;
+				}
+			}
+			.dgwt-wcas-preloader {
+				margin-right: 10px;
+			}
+		}
+		.dgwt-wcas-style-pirx.js-dgwt-wcas-layout-classic.dgwt-wcas-search-filled {
+			.dgwt-wcas-sf-wrapp {
+				button.dgwt-wcas-search-submit {
+					right: 15px;
+					left: auto;
+				}
+			}
+		}
+	}
+}
+
+

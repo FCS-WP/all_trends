@@ -1,0 +1,204 @@
+// WOOSW.
+
+.woosw-btn() {
+	.woosw-btn {
+		height: 50px;
+		padding: 0;
+        border: none;
+		background-color: transparent;
+		color: var(--vamtam-accent-color-1);
+		font-size: 10px;
+		flex-shrink: 1;
+		flex-grow: 0 !important;
+		flex-basis: 50px !important;
+		min-width: 10%;
+		white-space: nowrap;
+
+		&:hover {
+			background-color: transparent;
+			color: var(--vamtam-accent-color-8) !important;
+		}
+
+		&.vamtam-loading {
+			opacity: 0.3;
+			pointer-events: none;
+			cursor: wait;
+		}
+
+		.woosw-btn-icon {
+			font-size: 16px;
+		}
+	}
+}
+
+.woosw() {
+	.woosw-list {
+		table.woosw-items {
+			margin: 0 auto;
+
+			.woosw-item {
+				.woosw-item--remove {
+					span {
+						&::before {
+							content: var( --vamtam-icon-close);
+							font-size: 16px;
+							font-family: 'theme-icons' !important;
+							color: var(--vamtam-accent-color-6);
+							transition: color .3s ease;
+						}
+
+						&:hover {
+							&::before {
+								color: var(--vamtam-accent-color-8);
+							}
+						}
+					}
+				}
+
+				.woosw-item--name {
+					margin-bottom: 5px;
+
+					a {
+						font-family: var(--vamtam-primary-font-font-family), Sans-serif;
+						font-size: var(--vamtam-primary-font-font-size);
+						font-weight: var(--vamtam-primary-font-font-weight);
+						font-style: var(--vamtam-primary-font-font-style);
+						line-height: var(--vamtam-primary-font-line-height);
+						letter-spacing: var(--vamtam-primary-font-letter-spacing);
+						word-spacing: var(--vamtam-primary-font-word-spacing);
+					}
+				}
+			}
+
+			tr {
+				td {
+					border-bottom: 1px solid var(--vamtam-accent-color-7);
+				}
+
+				&:nth-child(2n) {
+					td {
+						background: transparent;
+					}
+				}
+
+				&:nth-child(1n) {
+					td {
+						background: transparent;
+
+						&:hover {
+							background: transparent;
+						}
+					}
+				}
+			}
+		}
+
+		.woosw-item--price {
+			margin-bottom: 15px;
+		}
+
+		:is(.woosw-item--price,
+			.woosw-item--time) {
+			font-family: var(--vamtam-primary-font-font-family), Sans-serif;
+			line-height: var(--vamtam-primary-font-line-height);
+			letter-spacing: var(--vamtam-primary-font-letter-spacing);
+			word-spacing: var(--vamtam-primary-font-word-spacing);
+		}
+		.woosw-item--price {
+			font-size: 14px;
+		}
+		.woosw-item--time {
+			text-transform: uppercase;
+			font-size: 10px;
+		}
+
+		.woosw-item--stock {
+			display: none;
+		}
+
+		.woosw-items {
+			.woosw-item {
+				:is(.woosw-item--add, .woosw-item--atc) {
+					:is(.add_to_cart_button, .added_to_cart, .button) {
+						display: block;
+						text-align: center;
+
+						&:focus {
+							outline: none !important;
+						}
+					}
+
+					.add_to_cart_button {
+						&:after {
+							display: inline-block;
+							height: auto;
+							line-height: 1em;
+							vertical-align: top;
+							margin-left: 10px;
+						}
+
+						&.added {
+							display: none;
+						}
+
+						&.loading:after {
+							top: unset;
+							right: unset;
+						}
+					}
+				}
+			}
+		}
+
+		.vamtam-empty-wishlist-notice {
+			display: none;
+			padding-top: 40px;
+		}
+
+		> .woosw-popup-content-mid-message {
+			padding-top: 40px;
+		}
+
+		.woosw-popup-content-mid-message,
+		.woosw-content-mid-notice,
+		.vamtam-look-for-heart {
+			text-align: center;
+		}
+
+		.vamtam-look-for-heart {
+			margin-bottom: 30px;
+		}
+
+		// Override elementor styles for wishlist on my-account page
+		.woocommerce-account & {
+			.vamtam-look-for-heart {
+				margin: 0 0 1em 0 !important;
+			}
+
+			.woosw-item--info {
+				font-family: "Readex Pro", sans-serif;
+
+				:is(.woosw-item--price, .woosw-item--time) {
+					color: var(--vamtam-widget-text-lighter);
+				}
+			}
+
+			.woosw-item--name a:not(:hover) {
+				color: var(--vamtam-body-link-regular);
+			}
+		}
+
+		.vamtam-start-shopping {
+			position: relative;
+			z-index: 1000;
+			margin: auto;
+			display: block;
+			transition: all .3s;
+		}
+
+		.vamtam-empty-wishlist-icon {
+			margin: 30px auto;
+			display: block;
+		}
+	}
+}

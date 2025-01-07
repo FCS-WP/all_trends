@@ -1,0 +1,37 @@
+// Call To Action.
+.elementor-widget-call-to-action {
+	&.vamtam-has-theme-widget-styles {
+
+		&.vamtam-has-underline-anim {
+			.elementor-button {
+				@tran-time: .35s; // If changed, please update the timeout timer value in the JS handler as well.
+				@width: var(--vamtam-underline-width, var(--vamtam-global-underline-width, 1px));
+				@spacing: var(--vamtam-underline-spacing, var(--vamtam-global-underline-spacing, 2px));
+				@color: linear-gradient(var(--vamtam-underline-bg-color, var(--vamtam-global-underline-bg-color, currentColor)) 0 0);
+
+				.vamtam-btn-text {
+					display: inline; // We need this for the multi-line underline anim follow the line breaks properly.
+					padding-bottom: @spacing;
+					background-image: @color;
+					background-repeat: no-repeat ;
+					transition:
+						background-size @tran-time,
+						background-position 0s @tran-time; // Change after the size immediately (@tran-time is used as delay here).
+				}
+
+				&:hover {
+					.vamtam-btn-text {
+						background-position: 50% 100%; // Bottom right.
+						background-size: 50% @width;
+					}
+				}
+				&:not(:hover) {
+					.vamtam-btn-text {
+						background-position: 50% 100%; // Bottom left.
+						background-size: 100% @width;
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,94 @@
+// Login.
+.elementor-widget-login {
+	// Base Theme Widget Styles.
+    &.vamtam-has-theme-widget-styles {
+		// Login Popup
+		&.vamtam-popup-login-form {
+			form.elementor-form {
+				.elementor-column.elementor-field-type-submit {
+					margin-top: 0;
+					margin-bottom: 20px;
+				}
+				.elementor-lost-password,
+				.elementor-register,
+				.vamtam-account-text {
+					&:extend( .vamtam-font-primary-font );
+				}
+				.elementor-lost-password {
+					position: absolute;
+					top: 36px;
+					right: 15px;
+					// color: var(--vamtam-accent-color-6);
+					font-family: var( --vamtam-primary-font-font-family );
+					font-size: 12px;
+					font-weight: var(--vamtam-primary-font-font-weight);
+					letter-spacing: 0;
+					line-height: 18px;
+					opacity: 0.6;
+				}
+
+				.vamtam-account-text,
+				.elementor-register {
+					white-space: nowrap;
+    				flex-grow: 1;
+				}
+
+				.vamtam-account-text {
+					text-align: end;
+				}
+
+				.elementor-register {
+					margin-left: 5px;
+					text-align: start;
+					font-weight: bold;
+				}
+
+				input {
+    				transition: all 0.3s;
+
+					&::placeholder {
+						color: var(--vamtam-accent-color-5);
+					}
+
+					&:is(:hover, :focus) {
+						border-color: var( --e-global-color-vamtam_accent_1);
+					}
+				}
+
+				#elementor-login-remember-me {
+					margin-right: 5px;
+					width: 20px;
+					height: 20px;
+					margin-bottom: 2px;
+				}
+
+			}
+			label {
+			   font-size: 14px;
+			   font-weight: var(--vamtam-primary-font-font-weight);
+
+		   }
+		}
+
+
+
+		// 'login--extra-login-controls' feature.
+		.vamtam-login-title,
+		.vamtam-login-text,
+		.vamtam-logged-in-title,
+		.vamtam-logged-in-text {
+			color: var(--vamtam-accent-color-5);
+		}
+		.vamtam-login-text,
+		.vamtam-logged-in-text {
+			&:extend( .vamtam-font-primary-font );
+		}
+		.vamtam-logged-in-btn {
+			width: 100%;
+		}
+		.vamtam-logged-in-def-title {
+			display: flex;
+			flex-wrap: nowrap;
+		}
+    }
+}

@@ -1,0 +1,17 @@
+// Loop Grid.
+@import "../loop-common/loop-common.less";
+
+.elementor-widget-loop-grid {
+	// Base Theme Widget Styles.
+	&.vamtam-has-theme-widget-styles {
+
+		// Loop Grid (Product)
+		&[data-widget_type="loop-grid.product"] {
+			.loop-common();
+		}
+
+		&.e-load-more-pagination-loading .e-loop__load-more .elementor-button {
+			border: 0;
+		}
+	}
+}

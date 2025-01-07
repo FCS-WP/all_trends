@@ -1,0 +1,98 @@
+@import '../woosw/woosw.less';
+
+// Shortcode.
+.elementor-widget-shortcode {
+
+	// Base Theme Widget Styles.
+	&.vamtam-has-theme-widget-styles {
+		.woosw();
+
+		// Order by.
+		&.vamtam-wc-ordering {
+			.woocommerce-ordering {
+				position: relative;
+				cursor: pointer;
+				&:extend(.vamtam-font-primary-font);
+				font-size: 12px;
+				color: var(--vamtam-primary-font-color);
+				float: unset;
+				padding: 0;
+				margin: 0;
+
+				.woocommerce-ordering__button {
+					display: flex;
+					align-items: center;
+					justify-content: space-between;
+				}
+
+				i {
+					margin-left: 10px;
+					font-size: 14px;
+					transition: transform .3s ease;
+				}
+
+				.woocommerce-ordering__submenu {
+					list-style: none;
+					background: white;
+					margin: 0;
+					border: 1px solid #e2e2e2;
+					width: initial;
+					min-width: 200px;
+					padding: 15px 0;
+					float: left;
+					position: absolute;
+					top: 102%;
+					right: -1px;
+					z-index: 100;
+					transition: opacity .5s ease, transform .5s ease;
+					opacity: 0;
+					transform: translate(0,20px);
+					pointer-events: none;
+
+					li {
+						padding: 5px 30px;
+						text-align: start;
+						width: 100%;
+
+						a {
+							outline: none;
+							text-decoration: none;
+						}
+					}
+				}
+
+				&:hover {
+					border-bottom-color: transparent;
+
+					i {
+						transform: rotateZ(180deg);
+					}
+					.woocommerce-ordering__submenu {
+						opacity: 1;
+						transform: translate(0,0);
+						pointer-events: initial;
+					}
+				}
+
+				.woocommerce-ordering__button-label {
+					color: var(--vamtam-accent-color-3);
+
+					> span {
+						font-weight: 500;
+						color: var(--vamtam-accent-color-6);
+					}
+				}
+			}
+		}
+
+		// Results count.
+		&.vamtam-results-count {
+			.woocommerce-result-count {
+				margin: 0;
+				font-size: 12px;
+				line-height: 1.4em;
+			}
+		}
+	}
+}
+
