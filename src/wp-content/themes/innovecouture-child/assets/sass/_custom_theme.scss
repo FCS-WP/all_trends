@@ -1,0 +1,71 @@
+.loop_products_home{
+    .vamtam-onsale{
+        position: absolute;
+    }
+    .add_to_cart_button{
+        display: none !important;
+    }
+    .woosw-btn-icon-text{
+        display: none;
+    }
+}
+
+.brand_slider_image{
+    a{
+        span{
+            text-align: left !important;
+        }
+    }
+}
+
+.page-id-92{
+    .page-header{
+        display: none;
+    }
+}
+
+
+.page-id-3101{
+    .page-header{
+        display: none;
+    }
+}
+
+.page-id-728{
+    .page-header{
+        display: none;
+    }
+}
+
+.woocommerce-cart-form{
+    table{
+        tr{
+            td{
+                .coupon{
+                    .button{
+                        padding: 7px;
+                        border: 1px solid #000;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(min-width: 1024px){
+    .heading-column-contact{
+        min-height: 48px;
+    }    
+}
+
+@media(max-width: 1024px){
+    .br_widget_brand_element_slider{
+        width: 49% !important;
+    }
+}
+
+@media(max-width: 768px){
+    .br_widget_brand_element_slider{
+        width: 100% !important;
+    }
+}
